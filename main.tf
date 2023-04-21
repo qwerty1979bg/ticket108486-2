@@ -3,7 +3,7 @@ data "tfe_outputs" "foo" {
   workspace = "ticket108486-1"
 }
 
-output "test2" {
+output "test3" {
   value=nonsensitive(data.tfe_outputs.foo.values)
   #sensitive=true
 }
