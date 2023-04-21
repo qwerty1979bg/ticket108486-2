@@ -4,6 +4,6 @@ data "tfe_outputs" "foo" {
 }
 
 output "test2" {
-  value=nonsensitive(data.tfe_outputs.foo)
+  value=nonsensitive(data.tfe_outputs.foo.values)
   #sensitive=true
 }
