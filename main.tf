@@ -4,5 +4,5 @@ data "tfe_outputs" "foo" {
 }
 
 output "test2" {
-  value=tfe_outputs.foo
+  value=data.tfe_outputs.foo
 }
